@@ -7,11 +7,13 @@
   <style>
     .all{
       width: 500px;
+      display: flex;
     }
     .firstbox{
       background-color: white;
       border-radius: 15px;
-      border: 1px solid black;}
+      border: 1px solid black;
+    }
    .secondbox{
       text-align: right;
       list-style-type: none;
@@ -43,83 +45,87 @@
       display: table;
       width:100%;
     }
+    h4{
+      flex-wrap: nowrap;
+    }
   </style>
 </head>
 <body>
   <div class="all">
     <h4>위젯 보드</h4>
     <div class="container">
+    
     <div class="firstbox">
            <div class="letter">
               <h5>캘린더</h5>
               <h2>3.11</h2>
               <br><p>일정이 없습니다.</p>
             </div>
+            <div class="secondbox">
+              <div class="calendar">
+                <table>
+                  <tr>
+                    <td>일</td>
+                    <td>월</td>
+                    <td>화</td>
+                    <td>수</td>
+                    <td>목</td>
+                    <td>금</td>
+                    <td>토</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>1</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                  </tr>
+                  <tr>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                  </tr>
+                </table>
+              </div>
+        
+        </div> 
+      </div>
             </div>
         
-      <div class="secondbox">
-        
-            <div class="calendar">
-              <table>
-                <tr>
-                  <td>일</td>
-                  <td>월</td>
-                  <td>화</td>
-                  <td>수</td>
-                  <td>목</td>
-                  <td>금</td>
-                  <td>토</td>
-                </tr>
-                <tr>
-                  <td>23</td>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td>3</td>
-                  <td>4</td>
-                  <td>5</td>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td>10</td>
-                  <td>11</td>
-                  <td>12</td>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                </tr>
-                <tr>
-                  <td>16</td>
-                  <td>17</td>
-                  <td>18</td>
-                  <td>19</td>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>22</td>
-                </tr>
-                <tr>
-                  <td>23</td>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>1</td>
-                </tr>
-              </table>
-            </div>
       
-      </div> 
-    </div>
     </div>
 </body>
 </html>

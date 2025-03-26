@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>과제2</title>
+  <style>
+    .lightfont{
+      color: grey;
+    }
+    .all{
+      width:700px;
+    }
+    li{
+      display: table-row; /*표의 가로줄*/
+    }
+    p{
+      display: table-cell; /*한 줄에 있는 칸*/
+      border: 1px;
+      padding:5px;
+    }
+    button{
+      width: 330px;
+      color: white;
+      background: linear-gradient(45deg,lightgreen,green); /*선형 그라데이션*/
+    }
+    textarea{
+      color: black;
+      margin-top: 5px;
+      padding-bottom: 100%;
+      width:200%
+    }
+    .areacontainer{
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <div class="all">
+    <ul style="list-style: none;">
+    <li>
+      <p class="lightfont">사번</p>
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <li>
+      <p class="lightfont">이름</p>
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <li>
+      <p class="lightfont">회사 내 이름</p>      
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <li>
+      <p class="lightfont">조직</p>
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <li>
+      <p class="lightfont">연장/야간근무 일자</p>
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <li>
+      <p class="lightfont">추가근무 시작시간</p>
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <li>
+      <p class="lightfont">추가근무 종료시간</p>
+      <input type="text" placeholder="내용을 입력하세요">
+    </li>
+    <div class="areacontainer">
+      <li>
+      <textarea placeholder="내용을 입력하세요"></textarea>
+    </li> 
+    </div>
+    <li>
+      <button type="button">보내기</button>
+    </li> 
+  </ul>     
+  </div>
+</body>
+</html>

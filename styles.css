@@ -1,0 +1,99 @@
+/* -----------------------------------
+   기본 스타일: 전체 텍스트 폰트 설정
+------------------------------------- */
+body {
+  font-family: Arial, sans-serif; /* 모든 텍스트에 Arial 폰트 적용 (상속됨) */
+}
+
+/* -----------------------------------
+ section 스타일: 모든 자식 요소에 글자색 상속
+------------------------------------- */
+section {
+  color: #333; /* 모든 section 내부 텍스트 색상 지정 */
+}
+
+/* -----------------------------------
+ #sectionA: 첫 번째 섹션에 대한 스타일
+------------------------------------- */
+#sectionA {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-left: 5px solid #3498db; /* 왼쪽에 파란색 막대 추가 */
+}
+
+/* -----------------------------------
+ 내비게이션 링크 스타일 (클래스: nav-link)
+------------------------------------- */
+.nav-link {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* 링크 호버 효과 */
+.nav-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* -----------------------------------
+ h2 태그: 모든 h2의 폰트 크기 지정
+------------------------------------- */
+h2 {
+  font-size: 24px;
+}
+
+/* -----------------------------------
+ ul 목록: 첫 번째와 마지막 아이템 배경색 적용
+------------------------------------- */
+ul li:first-child {
+  background-color: #ffebcd; /* 첫 번째 아이템 배경색 */
+}
+
+ul li:last-child {
+  background-color: #d3ffd3; /* 마지막 아이템 배경색 */
+}
+
+/* -----------------------------------
+ dl 목록: 홀수번째 dt에 배경색 적용
+------------------------------------- */
+dl dt:nth-child(odd) {
+  background-color: #f4f4f4;
+  padding: 5px;
+}
+
+/* -----------------------------------
+ 테이블 스타일: 기본 테이블, 헤더, 및 교차 배경색
+------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+/* 테이블 행: 교차 색상 적용 */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+/* -----------------------------------
+ 미디어 쿼리: 화면 가로 사이즈 640px 미만일 때
+------------------------------------- */
+@media screen and (max-width: 640px) {
+  body {
+      background-color: #e1e1e1;
+      font-size: 18px;
+  }
+}
